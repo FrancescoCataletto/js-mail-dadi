@@ -9,3 +9,11 @@ const playerRandomNumber = Math.floor(Math.random()* 6) + 1;
 const computerRandomNumber = Math.floor(Math.random()* 6) + 1;
 
 console.log(playerRandomNumber, computerRandomNumber);
+
+if(playerRandomNumber > computerRandomNumber){
+    console.log("you won!")
+}else if(computerRandomNumber > playerRandomNumber){
+    console.log("The computer won!")
+}else if(computerRandomNumber === playerRandomNumber){
+    console.log("It's a draw!")
+}
