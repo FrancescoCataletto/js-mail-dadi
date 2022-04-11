@@ -4,24 +4,32 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 */
 
+const randomButton = document.getElementById("randomNumbers");
+randomButton.innerHTML = "Click me!";
+
+
 // RANDOM NUMBERS
-const playerRandomNumber = Math.floor(Math.random()* 6) + 1;
-const computerRandomNumber = Math.floor(Math.random()* 6) + 1;
+randomButton.addEventListener("click", function(){
+    const playerRandomNumber = Math.floor(Math.random()* 6) + 1;
+    const computerRandomNumber = Math.floor(Math.random()* 6) + 1;
 
-// DOCUMENT ID
-const pNumber = document.getElementById("playerNumber");
-const cNumber = document.getElementById("computerNumber");
-const winner = document.getElementById("winner");
+    // DOCUMENT ID
+    const pNumber = document.getElementById("playerNumber");
+    const cNumber = document.getElementById("computerNumber");
+    const winner = document.getElementById("winner");
 
-// NUMBERS INSIDE ID
-pNumber.append(playerRandomNumber);
-cNumber.append(computerRandomNumber);
+    // NUMBERS INSIDE ID
+    pNumber.innerHTML = playerRandomNumber;
+    cNumber.innerHTML = computerRandomNumber;
 
-// CONDITIONS
-if(playerRandomNumber > computerRandomNumber){
-    winner.append("You won!");
-}else if(computerRandomNumber > playerRandomNumber){
-    winner.append("The computer won!");
-}else if(computerRandomNumber === playerRandomNumber){
-    winner.append("It's a draw!");
-}
+    // CONDITIONS
+    if(playerRandomNumber > computerRandomNumber){
+        winner.innerHTML = "You won!";
+    }else if(computerRandomNumber > playerRandomNumber){
+        winner.innerHTML = "The computer won!";
+    }else if(computerRandomNumber === playerRandomNumber){
+        winner.innerHTML = "It's a draw!";
+    }
+})
+
+

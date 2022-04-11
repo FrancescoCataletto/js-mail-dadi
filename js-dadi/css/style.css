@@ -32,6 +32,19 @@ body{
     flex-direction: column;
 }
 
+.buttonDiv{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    height: 100px;
+    width: 500px;
+}
+
+#randomNumbers{
+    height: 50px;
+    width: 100%;
+}
+
 #message{
     display: flex;
     align-items: center;
