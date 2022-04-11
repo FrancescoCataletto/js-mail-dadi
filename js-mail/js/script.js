@@ -4,3 +4,6 @@ controlla che sia nella lista di chi può accedere (creare quindi una lista di u
 stampa un messaggio appropriato sull’esito del controllo.
 
 */
+
+const userMail = prompt("Scrivi la tua mail");
+
