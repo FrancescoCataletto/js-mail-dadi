@@ -7,6 +7,8 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 const userMail = prompt("Scrivi la tua mail");
 
+const mailOutput = document.getElementById("mailBox");
+
 console.log(userMail);
 
 const authorizedMailsArr = [
@@ -57,7 +59,7 @@ const authorizedMailsArr = [
     }
 
     if(correctMail){
-        console.log("Welcome!")
+        mailOutput.append("Welcome!");
     }else{
-        console.log("Enter a valid Email please.")
+        mailOutput.append("Please enter a valid Email.")
     }
