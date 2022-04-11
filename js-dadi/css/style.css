@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#mainBox{
+    background-color:cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+#mainBox .number{
+    color: white;
+    background-color:darkcyan;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#message{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    height: 100px;
+    width: 500px;
+}
+
+#winner{
+    color: white;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
