@@ -7,6 +7,8 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 const userMail = prompt("Scrivi la tua mail");
 
+console.log(userMail);
+
 const authorizedMailsArr = [
     "DomenicoAgostino@gmail.com",
     "MihaiBadia@gmail.com",
@@ -45,3 +47,7 @@ const authorizedMailsArr = [
     "AmanjitSingh@gmail.com",
     "SebastianoVisco@gmail.com"
     ];
+
+    for(let i = 0; i < authorizedMailsArr.length; i++){
+        console.log(authorizedMailsArr[i]);
+    }
