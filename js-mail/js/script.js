@@ -60,8 +60,8 @@ mailButton.addEventListener("click", function(){
         }
 
         if(correctMail){
-            mailOutput.append("Welcome!");
+            mailOutput.innerHTML = "Welcome!";
         }else{
-            mailOutput.append("Please enter a valid Email.")
+            mailOutput.innerHTML = "Please enter a valid Email.";
         }
 })
