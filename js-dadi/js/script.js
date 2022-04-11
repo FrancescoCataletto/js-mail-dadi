@@ -4,16 +4,24 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 */
 
+// RANDOM NUMBERS
 const playerRandomNumber = Math.floor(Math.random()* 6) + 1;
-
 const computerRandomNumber = Math.floor(Math.random()* 6) + 1;
 
-console.log(playerRandomNumber, computerRandomNumber);
+// DOCUMENT ID
+const pNumber = document.getElementById("playerNumber");
+const cNumber = document.getElementById("computerNumber");
+const winner = document.getElementById("winner");
 
+// NUMBERS INSIDE ID
+pNumber.append(playerRandomNumber);
+cNumber.append(computerRandomNumber);
+
+// CONDITIONS
 if(playerRandomNumber > computerRandomNumber){
-    console.log("you won!")
+    winner.append("You won!");
 }else if(computerRandomNumber > playerRandomNumber){
-    console.log("The computer won!")
+    winner.append("The computer won!");
 }else if(computerRandomNumber === playerRandomNumber){
-    console.log("It's a draw!")
+    winner.append("It's a draw!");
 }
