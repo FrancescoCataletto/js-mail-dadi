@@ -48,6 +48,16 @@ const authorizedMailsArr = [
     "SebastianoVisco@gmail.com"
     ];
 
+    let correctMail = false;
+
     for(let i = 0; i < authorizedMailsArr.length; i++){
-        console.log(authorizedMailsArr[i]);
+        if(userMail === authorizedMailsArr[i]){
+            correctMail = true;
+        }
+    }
+
+    if(correctMail){
+        console.log("Welcome!")
+    }else{
+        console.log("Enter a valid Email please.")
     }
